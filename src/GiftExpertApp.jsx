@@ -1,30 +1,27 @@
 import { useState } from 'react';
 import { AddCategory } from './components/AddCategory';
+import { GifGrid } from './GifGrid';
 
 export const GiftExpertApp = () => {
   //nunca poner hooks en condicionales
   const [categories, setCategories] = useState(['One Punch']);
 
-  const onAddCategory = () => {
-    setCategories(['Valorant', ...categories]);
+  const onAddCategory = (newCategory) => {
+    if (categories.includes(newCategory)) return;
+
+    setCategories([newCategory, ...categories]);
     /*  setCategories(categories => ['Valorant', ...categories]); */
   };
 
   return (
     <>
-      {/* titulo */}
       <h1>GiftExpertApp</h1>
 
-      {/* Input */}
-      <AddCategory setCategories={setCategories}  />
+      <AddCategory onNewCategory={onAddCategory} />
 
-      {/* Listado de Gifs*/}
-      <ol>
-        {categories.map((category) => (
-          <li key={category}>{category}</li>
-        ))}
-      </ol>
-      {/* Listado de gifs items */}
+      {categories.map((category) => (
+        <GifGrid key={category} category={category} />
+      ))}
     </>
   );
 };
