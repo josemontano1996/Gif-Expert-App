@@ -4,7 +4,7 @@ import { GifGrid } from './GifGrid';
 
 export const GiftExpertApp = () => {
   //nunca poner hooks en condicionales
-  const [categories, setCategories] = useState(['One Punch']);
+  const [categories, setCategories] = useState(['Dragon Ball']);
 
   const onAddCategory = (newCategory) => {
     if (categories.includes(newCategory)) return;
