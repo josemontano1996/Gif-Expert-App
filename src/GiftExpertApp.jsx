@@ -1,10 +1,10 @@
 import { useState } from 'react';
-import { AddCategory } from './components/AddCategory';
-import { GifGrid } from './components/GifGrid';
+import { AddCategory, GifGrid } from './components';
+
 
 export const GiftExpertApp = () => {
   //nunca poner hooks en condicionales
-  const [categories, setCategories] = useState(['Dragon Ball']);
+  const [categories, setCategories] = useState(['Dragon Ball']); 
 
   const onAddCategory = (newCategory) => {
     if (categories.includes(newCategory)) return;
