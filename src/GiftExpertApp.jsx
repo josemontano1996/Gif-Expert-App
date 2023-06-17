@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { AddCategory } from './components/AddCategory';
-import { GifGrid } from './GifGrid';
+import { GifGrid } from './components/GifGrid';
 
 export const GiftExpertApp = () => {
   //nunca poner hooks en condicionales
