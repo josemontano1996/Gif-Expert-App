@@ -7,7 +7,7 @@ exports[`GifItem testing Evaluate Snapshot\` 1`] = `
   >
     <img
       alt="One Piece"
-      src="Demo.url"
+      src="https://one-piece.com/onepunch.jpg"
     />
     <p>
       One Piece

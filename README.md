@@ -2,7 +2,7 @@ Hello World, this is my first React proyect.
 
 In this proyect I learned some core functionalities about React and created a Gifs searching App.
 
-For this Reach proyect I used yarn as a package manager, Vite as building tool and Jest for testing.
+For this React proyect I used yarn as a package manager, Vite as building tool and Jest and testing-library/react for testing.
 
 The link for visiting this proyect is the following: [GifsAppLink](https://josemontano1996.github.io/Gif-Expert-App/)
 
